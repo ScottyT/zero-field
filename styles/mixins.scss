@@ -1,0 +1,7 @@
+@mixin opacity($property, $color, $opacity) {
+    @if $property == 'box-shadow' {
+        box-shadow: inset 0 0 0 5000px rgba($color, $opacity);
+    } @else {
+        #{$property}: rgba($color, $opacity);
+    }
+}

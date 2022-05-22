@@ -1,0 +1,16 @@
+@import "mixins";
+
+.hero-container {
+    height:353px;
+    display:flex;
+    place-content: center;
+    @include opacity(box-shadow, rgb(27, 27, 27), .25);
+    &__inner {
+        position:relative;
+        width:100%;
+        h1 {
+            bottom:80px;
+            position:absolute;
+        }
+    }
+}
